@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<title>Martha Ramirez</title>
+      <link href="main.css" rel="stylesheet" />
+      <link href="main.js" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+    <h1>Martha Ramirez</h1>
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: lightskyblue">
+  <div class="container-fluid">
+      <a class="navbar-brand h1 text-dark" href="#"><img src="logo.png" alt="MR" width="60" height="40" class="rounded-pill" class="d-inline-block align-text-top">&nbsp;&nbsp;<strong>Get to know me!</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="Index.html"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="goals.html"><strong>Goals</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="resume.html"><strong>Resume</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="registration.html"><strong>Registration</strong></a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Contact Me</strong></a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="mailto:mramirez@example.com"><i class='fas fa-envelope mt-1 mr-3'></i> mramirez@example.com</a></li>
+              <li><a class="dropdown-item" href="tel:+15625551234"><i class="fas fa-phone-alt mt-1 mr-3"></i> (562) 555-1234</a></li>
+            <li><a class="dropdown-item" href="#"><i class='fas fa-home mt-1 mr-3'></i> PO Box 1234 Cerritos, CA. 12345</a></li>.
+         </ul>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+</header>
+    
+<h2>Goals</h2>
+    
+<!-- Slideshow container -->    
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade"> 
+  <div class="numbertext">1 / 4</div>
+  <img src="image11.JPG" alt="Associate's Degree" style="width:100%">
+  <div class="text">>Earn my associates degree in programming.</div>
+</div>
+
+<div class="mySlides fade"> 
+  <div class="numbertext">2 / 4</div>
+  <img src="image12.JPG" alt="Progamming Languages" style="width:100%">
+  <div class="text">Learn different programming languages.</div>
+</div>
+
+<div class="mySlides fade"> 
+  <div class="numbertext">3 / 4</div>
+  <img src="image13.JPG" alt="Progamming Lanuages" style="width:100%">
+  <div class="text">Learn different programming languages.</div>
+</div>
+
+<div class="mySlides fade">     
+   <div class="numbertext">4 / 4</div>
+   <img src="image14.JPG" alt="Programming Certificates" style="width: 100%">
+   <div class="text">Obtain programming certificates.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+    
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+    
+<footer>
+    <br>Email: &nbsp;<a href="mailto:mramirez@example.com">mramirez@example.com</a>
+    <br>
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <br>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+    
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</body>
+</html> 
