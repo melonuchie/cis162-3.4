@@ -105,4 +105,4 @@ function fixStepIndicator(n) {
 }
 
 /* script for emoji */
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://kit.fontawesome.com/fa00f4bf98.js" crossorigin="anonymous"></script>
